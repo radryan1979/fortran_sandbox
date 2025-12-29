@@ -1,0 +1,21 @@
+{
+    "version" : "2.0.0",
+    "tasks" : [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "gfortran",
+            "args": [
+                "-Wall",
+                "-o",
+                "hello",
+                "hello.f90"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
