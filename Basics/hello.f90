@@ -1,13 +1,26 @@
 
 
 program hello
+
+    use math_utils
     implicit none
 
+    integer :: i = 0
     real :: x,y
+    real :: z(5)
+
+    z(1) = 5.0
+    z(2) = 3.0
+    z(3) = 2.5
+    z(4) = 6.5
+    z(5) = 2.25
 
     ! This is a comment
     print *, 'Hello, World!'
     print *, 'Hello, Universe!'
+
+    ! Calls sumit from the module math_utils
+    print *, 'The sum is:', sumit(z)
 
 #ifdef CALC
     print *, 'Enter the first number:'
